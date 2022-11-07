@@ -60,7 +60,7 @@ def load_image():
 
 
 #st.title('Garbage Classification')
-menu = ['Home', 'Test']
+menu = ['Home', 'Test', 'Contact']
 choice = st.sidebar.selectbox('Menu', menu)
 if choice == 'Home':
     st.title('Garbage Classification')
@@ -97,5 +97,10 @@ elif choice == 'Test':
     if __name__ == '__main__':
         main()
 
+elif choice == 'Contact':
+    st.title('Contact')
+    st.subheader('[Abubakr Mamajonov](https://abubakr1710-my-website-app-kx4y2h.streamlit.app)')
+    img = 'images\qrcode.png'
+    st.image(img, caption='QR code')
 
 
