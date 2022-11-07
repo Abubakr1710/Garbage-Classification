@@ -25,9 +25,6 @@ def load_model():
 
 def load_labels():
     labels_path = 'labels.txt'
-    # labels_file = os.path.basename(labels_path)
-    # if not os.path.exists(labels_file):
-    #     wget.download(labels_path)
     with open(labels_path, "r") as f:
         categories = [s.strip() for s in f.readlines()]
         return categories
@@ -89,7 +86,7 @@ if choice == 'Home':
 
 
 elif choice == 'Test':
-    st.subheader('test')
+    st.subheader("Let's test the model")
     def main():
 
         model = load_model()
