@@ -58,7 +58,8 @@ def load_image():
         st.write('Waiting for upload....')
         return None
 
-
+st.sidebar.image('images/picture.png', width=300)
+st.sidebar.markdown("<h1 style='text-align: center; color: black;'><a href= 'https://abubakr1710-my-website-app-kx4y2h.streamlit.app/'>Abubakr Mamajonov</a></h1>", unsafe_allow_html=True)
 #st.title('Garbage Classification')
 menu = ['Home', 'Test', 'Contact']
 choice = st.sidebar.selectbox('Menu', menu)
