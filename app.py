@@ -1,14 +1,11 @@
 from cgi import test
 from secrets import choice
-import numpy
 import streamlit as st
 import torch
 from  torchvision import datasets, transforms, models
 import numpy as np
 from PIL import Image
 import io
-import pandas as pd
-import cv2
 st.set_option('deprecation.showfileUploaderEncoding', False)
 @st.cache(allow_output_mutation=True)
 
@@ -67,7 +64,7 @@ menu = ['Home', 'Test']
 choice = st.sidebar.selectbox('Menu', menu)
 if choice == 'Home':
     st.title('Garbage Classification')
-    image = 'box.jpeg'
+    image = 'images/box.jpeg'
     st.image(image, width=700, caption='Waste management-Global problem')
     st.write('Humans produce millions of tons of garbage everyday. Garbage needs to be segregated before it is taken out of houses. Sometimes people are so lazy to do like that. It is time to automate it')
     st.subheader('Some informations about the data:')
@@ -78,7 +75,7 @@ if choice == 'Home':
     st.write('4.Paper')
     st.write('5.Plastic')
     st.write('6.Trash')
-    image = 'type.png'
+    image = 'images/type.png'
     st.image(image, width=700)
 
     
