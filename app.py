@@ -100,7 +100,7 @@ elif choice == 'Test':
 elif choice == 'Contact':
     st.title('Contact')
     st.subheader('[Abubakr Mamajonov](https://abubakr1710-my-website-app-kx4y2h.streamlit.app)')
-    img = 'images\qrcode.png'
-    st.image(img, caption='QR code')
+    #img = 'images\qrcode.png'
+    #st.image(img)
 
 
