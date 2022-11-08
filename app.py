@@ -64,7 +64,7 @@ st.sidebar.markdown("<h1 style='text-align: center; color: black;'><a href= 'htt
 menu = ['Home', 'Test']
 choice = st.sidebar.selectbox('Menu', menu)
 if choice == 'Home':
-    st.markdown("<h1 style='text-align: center; color: black;'>Abubakr Mamajonov</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: black;'>Garbage Classification</h1>", unsafe_allow_html=True)
     image = 'images/box.jpeg'
     st.image(image, width=700, caption='Waste management-Global problem')
     st.write('Humans produce millions of tons of garbage everyday. Garbage needs to be segregated before it is taken out of houses. Sometimes people are so lazy to do like that. It is time to automate it')
