@@ -61,7 +61,7 @@ def load_image():
 st.sidebar.image('images/picture.png', width=300)
 st.sidebar.markdown("<h1 style='text-align: center; color: black;'><a href= 'https://abubakr1710-my-website-app-kx4y2h.streamlit.app/'>Abubakr Mamajonov</a></h1>", unsafe_allow_html=True)
 #st.title('Garbage Classification')
-menu = ['Home', 'Test', 'Contact']
+menu = ['Home', 'Test']
 choice = st.sidebar.selectbox('Menu', menu)
 if choice == 'Home':
     st.title('Garbage Classification')
@@ -97,9 +97,5 @@ elif choice == 'Test':
 
     if __name__ == '__main__':
         main()
-
-elif choice == 'Contact':
-    st.title('Contact')
-    st.subheader('[Abubakr Mamajonov](https://abubakr1710-my-website-app-kx4y2h.streamlit.app)')
 
 
